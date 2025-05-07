@@ -24,7 +24,17 @@
 
 ## Instalation
 
-TODO
+After cloning the repository, run
+
+```
+npm install
+```
+
+And then, you can run the backend by running
+
+```
+npm run dev
+```
 
 ## License
 
