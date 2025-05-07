@@ -1,4 +1,15 @@
 {
+  "name": "notejam-backend",
+  "version": "1.0.0",
+  "description": "NodeJS backend for the Notejam solution",
+  "main": "index.js",
+  "scripts": {
+    "commit": "cz",
+    "release": "standard-version"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  },
   "devDependencies": {
     "@commitlint/cli": "^19.8.0",
     "@commitlint/config-conventional": "^19.8.0",
@@ -8,11 +19,22 @@
     "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^9.1.7",
-    "semantic-release": "^24.2.3"
+    "prettier": "^3.5.3",
+    "standard-version": "^9.5.0"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guilhermecamara/notejam-backend.git"
+  },
+  "author": "Guilherme Câmara",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/guilhermecamara/notejam-backend/issues"
+  },
+  "homepage": "https://github.com/guilhermecamara/notejam-backend#readme"
 }
