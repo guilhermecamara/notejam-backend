@@ -1,4 +1,4 @@
-import { IEntity, IMeta } from '../../../core/domain/entities'
+import { IEntity, IMeta } from '../../core/domain/entities.js'
 
 export type Pad = IEntity &
   IMeta & {

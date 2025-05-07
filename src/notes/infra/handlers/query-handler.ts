@@ -1,7 +1,9 @@
-import { QueryNote } from '../../domain/commands/query'
-import { Note } from '../../domain/entities/note'
-import { IRequestHandler } from '../../../core/infra/handler'
+import { injectable } from 'tsyringe'
+import { IRequestHandler } from '../../../core/infra/handler.js'
+import { QueryNote } from '../../domain/commands/query.js'
+import { Note } from '../../domain/entities/note.js'
 
+@injectable()
 export class QueryNoteHandler implements IRequestHandler<QueryNote, Note[]> {
   handle(request: QueryNote): Promise<Note[]> {
     return Promise.resolve([

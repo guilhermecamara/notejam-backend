@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "NodeJS backend for the Notejam solution",
   "main": "src/index.ts",
+  "type": "module",
   "scripts": {
     "prepare": "husky install",
     "dev": "nodemon",
@@ -15,7 +16,9 @@
     "node": ">=20.19.0"
   },
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "reflect-metadata": "^0.2.2",
+    "tsyringe": "^4.10.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.0",
